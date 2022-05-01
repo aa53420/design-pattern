@@ -1,10 +1,10 @@
 package factory.factory_method_pattern;
 
-import factory.factory_method_pattern.pizza.creator.ChicagoPizzaStore;
-import factory.factory_method_pattern.pizza.creator.NYPizzaStore;
-import factory.factory_method_pattern.pizza.creator.PizzaStore;
-import factory.factory_method_pattern.pizza.product.Pizza;
-import factory.factory_method_pattern.pizza.product.PizzaType;
+import factory.factory_method_pattern.store.ChicagoPizzaStore;
+import factory.factory_method_pattern.store.NYPizzaStore;
+import factory.factory_method_pattern.store.PizzaStore;
+import factory.factory_method_pattern.pizza.Pizza;
+import factory.factory_method_pattern.pizza.PizzaType;
 
 public class FactoryMethodPatternTestDrive {
 

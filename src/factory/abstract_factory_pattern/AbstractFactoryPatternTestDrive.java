@@ -1,11 +1,11 @@
 package factory.abstract_factory_pattern;
 
 
-import factory.abstract_factory_pattern.pizza.creator.ChicagoPizzaStore;
-import factory.abstract_factory_pattern.pizza.creator.NYPizzaStore;
-import factory.abstract_factory_pattern.pizza.creator.PizzaStore;
-import factory.abstract_factory_pattern.pizza.product.Pizza;
-import factory.abstract_factory_pattern.pizza.product.PizzaType;
+import factory.abstract_factory_pattern.store.ChicagoPizzaStore;
+import factory.abstract_factory_pattern.store.NYPizzaStore;
+import factory.abstract_factory_pattern.store.PizzaStore;
+import factory.abstract_factory_pattern.pizza.Pizza;
+import factory.abstract_factory_pattern.pizza.PizzaType;
 
 public class AbstractFactoryPatternTestDrive {
 
