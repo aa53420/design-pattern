@@ -13,12 +13,10 @@ public class AbstractFactoryPatternTestDrive {
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
-        System.out.println("=== Abstract Factory Pattern ===");
-
         Pizza pizza = nyStore.orderPizza(PizzaType.CHEESE);
-        System.out.println("에단이 주문한 " + pizza.getName() + "\n");
+        System.out.println("\n" + " 에단 주문 " + pizza + "\n");
 
-        pizza = chicagoStore.orderPizza(PizzaType.PEPPERONI);
-        System.out.println("조엘이 주문한 " + pizza.getName() + "\n");
+        pizza = chicagoStore.orderPizza(PizzaType.CHEESE);
+        System.out.println("\n" + " 조엘 주문 " + pizza + "\n");
     }
 }

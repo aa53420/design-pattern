@@ -1,37 +1,46 @@
 package factory.abstract_factory_pattern.pizza.ingredient;
 
-import java.util.Arrays;
-import java.util.List;
+import factory.abstract_factory_pattern.pizza.ingredient.cheese.Cheese;
+import factory.abstract_factory_pattern.pizza.ingredient.cheese.ReggianoCheese;
+import factory.abstract_factory_pattern.pizza.ingredient.clam.Clam;
+import factory.abstract_factory_pattern.pizza.ingredient.clam.FreshClam;
+import factory.abstract_factory_pattern.pizza.ingredient.dough.Dough;
+import factory.abstract_factory_pattern.pizza.ingredient.dough.ThinCrustDough;
+import factory.abstract_factory_pattern.pizza.ingredient.pepperoni.Pepperoni;
+import factory.abstract_factory_pattern.pizza.ingredient.pepperoni.SlicedPepperoni;
+import factory.abstract_factory_pattern.pizza.ingredient.sauce.MarinaraSauce;
+import factory.abstract_factory_pattern.pizza.ingredient.sauce.Sauce;
+import factory.abstract_factory_pattern.pizza.ingredient.veggie.*;
 
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
     public Dough createDough() {
-        return Dough.THIN_CRUST_DOUGH;
+        return new ThinCrustDough();
     }
 
     @Override
     public Sauce createSauce() {
-        return Sauce.MARINARA;
+        return new MarinaraSauce();
     }
 
     @Override
     public Cheese createCheese() {
-        return Cheese.REGGIANO;
+        return new ReggianoCheese();
     }
 
     @Override
-    public List<Veggie> createVeggies() {
-        List<Veggie> veggies = Arrays.asList(Veggie.GARLIC, Veggie.ONION, Veggie.MUSHROOM, Veggie.RED_PEPPER);
+    public Veggie[] createVeggies() {
+        Veggie veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
         return veggies;
     }
 
     @Override
     public Pepperoni createPepperoni() {
-        return Pepperoni.SLICED_PEPPERONI;
+        return new SlicedPepperoni();
     }
 
     @Override
     public Clam createClam() {
-        return Clam.MUSSEL;
+        return new FreshClam();
     }
 }
