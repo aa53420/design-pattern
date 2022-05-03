@@ -1,7 +1,5 @@
 package singleton.thread_safe;
 
-import singleton.classic.Singleton;
-
 public class ThreadSafeSingleton3 {
     private volatile static ThreadSafeSingleton3 instance;
 
