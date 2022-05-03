@@ -7,7 +7,7 @@ public class ThreadSafeSingleton3 {
 
     private ThreadSafeSingleton3() {}
 
-    public static synchronized ThreadSafeSingleton3 getInstance(){
+    public static ThreadSafeSingleton3 getInstance(){
         if(instance == null){
             synchronized (ThreadSafeSingleton3.class) {
                 if(instance == null){
