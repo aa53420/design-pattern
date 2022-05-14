@@ -41,7 +41,7 @@
 - [x] Factory Pattern
 - [x] Singleton Pattern
 - [x] Command Pattern
-- [ ] Adapter Pattern
+- [x] Adapter Pattern
 - [ ] Template Method Pattern
 - [ ] Iterator Pattern
 - [ ] State Pattern
