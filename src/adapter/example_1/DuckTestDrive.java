@@ -1,4 +1,4 @@
-package adapter;
+package adapter.example_1;
 
 public class DuckTestDrive {
 
