@@ -1,15 +1,22 @@
 package adapter.example_1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DuckTestDrive {
 
     public static void main(String[] args) {
+        List<Duck> ducks = new ArrayList();
+
         Duck mallardDuck = new MallardDuck();
+        ducks.add(mallardDuck);
 
-        Turkey wildTurkey = new WildTurkey();
-        TurkeyAdapter turkeyAdapter = new TurkeyAdapter(wildTurkey);
+        Duck wildTurkey = new TurkeyAdapter(new WildTurkey());
+        ducks.add(wildTurkey);
 
-        testDuck(mallardDuck);
-        testDuck(turkeyAdapter);
+        for(Duck duck : ducks){
+            duck.quack();
+        }
     }
 
     static void testDuck(Duck duck){
