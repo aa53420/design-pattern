@@ -42,7 +42,7 @@
 - [x] Singleton Pattern
 - [x] Command Pattern
 - [x] Adapter Pattern
-- [ ] Template Method Pattern
+- [x] Template Method Pattern
 - [ ] Iterator Pattern
 - [ ] State Pattern
 - [ ] Proxy Pattern
