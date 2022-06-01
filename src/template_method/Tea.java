@@ -1,6 +1,6 @@
 package template_method;
 
-public class Tea extends CaffeineBeverage {
+public class Tea extends CaffeineBeverageWithHook {
     @Override
     void brew() {
         System.out.println("찻잎을 우립니다.");
