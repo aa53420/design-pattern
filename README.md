@@ -43,10 +43,10 @@
 - [x] Command Pattern
 - [x] Adapter Pattern
 - [x] Template Method Pattern
-- [ ] Iterator Pattern
+- [ ] iterator Pattern
+- [ ] Composite Pattern
 - [ ] State Pattern
 - [ ] Proxy Pattern
-- [ ] Composite Pattern
 - [ ] ETC Patterns
   - [ ] Bridge Pattern
   - [ ] Builder Pattern
