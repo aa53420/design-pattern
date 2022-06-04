@@ -1,0 +1,34 @@
+package iterator.after;
+
+import java.util.List;
+
+public class PancakeHouseIterator implements Iterator {
+    List<MenuItem> items;
+    int position = 0;
+
+    public PancakeHouseIterator(List<MenuItem> items) {
+        this.items = items;
+    }
+
+    @Override
+    public boolean hasNext() {
+        try{
+            if (position >= items.size()) {
+                return false;
+            }
+
+            return true;
+        }
+        catch(IndexOutOfBoundsException ioEx){
+            return false;
+        }
+    }
+
+    @Override
+    public MenuItem next() {
+        MenuItem menuItem = items.get(position);
+        position = position + 1;
+
+        return menuItem;
+    }
+}
